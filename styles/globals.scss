@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Flamante;
+  src: url("fonts/Flamante-Round-Book-FFP.ttf") format("opentype");
+}
+@font-face {
+  font-family: Flamante-Medium;
+  src: url("fonts/Flamante-Round-0Medium-FFP.ttf") format("opentype");
+}
+@font-face {
+  font-family: Flamante-Bold;
+  src: url("fonts/Flamante-Round-Bold-FFP.ttf") format("opentype");
+}
+/* @font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Regular.ttf") format("opentype");
+} */
+
+$black:#FDFFFC;
+$red: #FF9F1C;
+$white: #ffff;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Flamante, sans-serif;
+  font-display: swap;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  padding: 15px 0px;
+  .logo {
+    grid-column: span 2;
+    font-family: Flamante-Bold;
+    color: $red;
+    font-weight: blod;
+    margin-top: 5px;
+    font-size: 24px;
+    .icon {
+      position: absolute;
+      top:15px;
+      width: 35px;
+    }
+    .text {
+      margin-left: 45px;
+    }
+  }
+  .search {
+    grid-column: span 8;
+    word-wrap: none;
+    position: relative;
+    input {
+      width: 100%;
+      border: none;
+      background: rgb(240, 240, 240);
+      padding: 10px 40px;
+      border-radius: 100px;
+      font-family: Flamante;
+    }
+    .icon {
+      position: absolute;
+      left: 15px;
+      top: 11px;
+      fill: rgb(131, 131, 131);
+    }
+  }
+}
+
+.favcolor {
+  fill: $white;
+}
+
+.center {
+  text-align: center;
+}

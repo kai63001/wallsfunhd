@@ -12,7 +12,7 @@ const Homepage = (props) =>  {
       <h1 className={styles.slogan+ " center"}>
          Bringing content creators <br/>and their fanss together! 
       </h1>
-      <h2 className="center">asdsada</h2>
+      <h2 className="center">:asdsadas</h2>
     </div>
   </Layout>
 )};

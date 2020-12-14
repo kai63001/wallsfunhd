@@ -8,11 +8,11 @@ const Homepage = (props) =>  {
   return (
   <Layout>
     <div className="main">
-      <br/><br/><br/>
+      <br/><br/>
       <h1 className={styles.slogan+ " center"}>
          Bringing content creators <br/>and their fanss together! 
       </h1>
-      <h2 className="center">:asdsadas</h2>
+      <h2 className="center">romeo</h2>
     </div>
   </Layout>
 )};

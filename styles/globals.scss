@@ -16,7 +16,7 @@
 } */
 
 $black:#FDFFFC;
-$red: #FF9F1C;
+$orange: #FF9F1C;
 $white: #ffff;
 
 html,
@@ -50,6 +50,7 @@ a {
 .main {
   max-width: 1200px;
   margin: auto;
+  font-family: Flamante, sans-serif;
 }
 
 nav {
@@ -57,17 +58,20 @@ nav {
   .logo {
     grid-column: span 2;
     font-family: Flamante-Bold;
-    color: $red;
+    color: $orange;
     font-weight: blod;
     margin-top: 5px;
     font-size: 24px;
     .icon {
       position: absolute;
-      top:15px;
-      width: 35px;
+      top: 18px;
+      width: 30px;
     }
     .text {
       margin-left: 45px;
+      .black {
+        color:black;
+      }
     }
   }
   .search {
@@ -89,10 +93,26 @@ nav {
       fill: rgb(131, 131, 131);
     }
   }
+  .upload {
+    grid-column: span 1;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+  }
+  .login { 
+    grid-column: span 1;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    background-color: $orange;
+    color: $white;
+    border-radius: 100px;
+  }
 }
 
 .favcolor {
   fill: $white;
+
 }
 
 .center {
